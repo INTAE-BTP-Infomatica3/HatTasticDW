@@ -1,0 +1,387 @@
+.body{
+    font-family: Kelvinch-Bold;
+}
+
+html{
+    font-size: 62,5%;
+    font-family: Kelvinch-Bold;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    align-items: center;
+    justify-content: space-between;
+    max-width: 120rem;
+    margin: 0 auto;
+    font-family: Arial;
+}
+
+.container-hero{
+    font-family: Arial;
+    background-color: whitesmoke;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.customer-support{
+    display: flex;
+    margin-top: 3%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    font-family: Arial;
+}
+
+.customer-support{
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.content-customer-support{
+    display: flex;
+    font-family: Arial;
+    flex-direction: column;
+}
+
+.container-logo{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-left: 47%;
+    margin-bottom: 1%;
+    margin-top: -3%;
+    justify-content: space-between;
+    gap: 1rem;
+    max-width: 1rem;
+    max-height: 1rem;
+}
+
+.container-user-cart{
+    padding-bottom: 2%;
+}
+.container-user{
+    display: flex;
+    margin-left: 85%;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.container-user .fa-user{
+    display: flex;
+    font-size: 2.5rem;
+    color: black;
+    padding-right: 2.5rem;
+    border-right: 1px solid silver;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.container-user .fa-basket-shopping{
+    font-size: 2.5rem;
+    color: black;
+    padding-left: 1rem;
+    text-decoration: none;
+}
+
+.content-shoppin-cart{
+    color: black;
+    font-size: 24%;
+    text-decoration: none;
+    display: flex;
+}
+
+
+.container-navbar{
+    background-color: burlywood;
+    padding-left:3%;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.navbar .fa-bars{
+    display: none;
+}
+
+.menu{
+    display: flex;
+    gap: 2rem;
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menu a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: chocolate;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.menu a::after{
+    content: '';
+    width: 1.5rem;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+.menu a:hover:after{
+    opacity: 1;
+}
+
+.menu a:hover{
+    color: black;
+}
+
+.search-form{
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 30px;
+    background-color: white;
+    height: 4.4rem;
+    overflow: hidden;
+}
+
+.search-form input{
+    outline: none;
+    font-family: inherit;
+    border: none;
+    width: 25rem;
+    font-size: 1.4rem;
+    padding: 0 2rem;
+    color: tan;
+    cursor: pointer;
+}
+
+.search-form input::webkit-search-cancel-button{
+    appearance: none;
+}
+
+.search-form .btn-search{
+    border: none;
+    background-color: chocolate;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 1rem;
+}
+
+.btn-search{
+    font: 20rem;
+    color: white;
+}
+
+/*TITULO Y BANNER CON TRANSICION*/
+
+@font-face {
+    font-family: Kelvinch-Bold;
+    src: url(Kelvinch-Bold.otf);
+}
+.home{
+    font-family: Kelvinch-Bold;
+    margin-left: 32%;
+    font-size: 500%;
+    color: chocolate;
+    cursor: pointer;
+    transition: color 0.5s ease, transform 0.5s ease; /* Transición suave para color y desplazamiento */
+}
+.home:hover {
+    color: sienna; /* Cambia a un color más oscuro cuando el cursor está encima */
+}
+
+.eslogan-container {
+    width: 100%;
+    overflow: hidden; /* Oculta el texto que sale del contenedor */
+    background-color: burlywood;
+    padding: 10px 0; /* Ajusta el relleno para que el texto encaje bien */
+    box-shadow: 0 4px 8px rgba(5, 5, 5, 0.1);
+    position: relative;
+}
+
+.eslogan {
+    display: flex;
+    white-space: nowrap;
+    animation: scroll 15s linear infinite;
+}
+
+.eslogan span {
+    font-family: Kelvinch-Bold;
+    font-size: 190%;
+    color: chocolate;
+    margin: 0 1em; /* Espacio entre cada repetición del texto */
+}
+
+/* Animación de desplazamiento */
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/*COTENIDO IMAGENES Y VIDEOS CON MARGENES*/
+.videofondo1, .videofondo2 {
+    width: 25%; /* Ajusta el ancho del contenedor */
+    max-width: 400px; /* Establece un ancho máximo para el contenedor */
+    background-color: burlywood;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(5, 5, 5, 0.1); /* Reduce el tamaño de la sombra */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    padding: 10px; /* Añade un pequeño espacio alrededor del video */
+    margin: 20px; /* Añade un margen alrededor del contenedor */
+}
+
+.video1, .video2 {
+    width: 100%; /* Asegura que el video ocupe todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción del video */
+    display: block; /* Elimina el espacio debajo del video */
+    margin: 0; /* Elimina cualquier margen */
+    border-radius: 4px; /* Ajusta el borde del video */
+}
+
+.videos-container {
+    display: flex; /* Utiliza flexbox para alinear los contenedores */
+    justify-content: space-between; /* Añade espacio entre los contenedores */
+    align-items: flex-start; /* Alinea los contenedores al inicio (parte superior) */
+    flex-wrap: wrap; /* Permite que los contenedores se envuelvan si es necesario */
+}
+
+.imagefondo1, .imagefondo2 {
+    width: 25%; /* Ajusta el ancho del contenedor */
+    max-width: 400px; /* Establece un ancho máximo para el contenedor */
+    background-color: burlywood;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(5, 5, 5, 0.1); /* Reduce el tamaño de la sombra */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    margin: 7% auto; /* Añade un margen alrededor del contenedor */
+    cursor: zoom-in;
+}
+.photos{
+    width: 100%; /* Ajusta el tamaño de la imagen según sea necesario */
+    transition: transform 0.5s ease; /* Transición suave para el zoom */
+}
+.photos:hover{
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen en un 10% */
+}
+
+/* Contenedor del botón */
+.order-now-container {
+    position: absolute;
+    justify-content: center;
+    margin: 600px 0px 0px 750px;
+}
+
+/* Botón de pedido */
+.order-now-button {
+    display: inline-block; /* Hace que el enlace se comporte como un botón */
+    background-color: chocolate;
+    color: blue;
+    font-size: 30px;
+    font-family: Kelvinch-Bold;
+    font-style: italic;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.order-now-container .order-now-button {
+    color: white;
+}
+
+.order-now-button:hover {
+    background-color: sienna;
+    transform: scale(1.3);
+}
+
+
+
+
+/*CONTENIDO HISTORIA*/
+.vision {
+    text-align: left;
+    padding: 20px;
+    background-color: tan;
+    background-image: url(marketing/frases.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 40%;
+    margin: 20px 5px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(5, 5, 5, 0.1);
+}
+
+.vision h2 {
+    font-family: Kelvinch-Bold;
+    color: white;
+    font-size: 50px;
+}
+
+.p1 {
+    font-family: Kelvinch-Bold;
+    font-size: 25px;
+    text-align: justify;
+    max-width: 900px;
+    color: white;
+}
+
+/*DERECHOS DE AUTOR*/ 
+/* Añade un margen inferior al contenido principal */
+.main-content {
+    padding-bottom: 3em; /* Ajusta según sea necesario para evitar superposición */
+}
+.Pie {
+    background-color: burlywood;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.Pie p {
+    font-size: 120%;
+}

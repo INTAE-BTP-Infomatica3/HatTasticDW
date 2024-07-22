@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="carrito.css">
+    <link rel="icon" href="imagenes/logo sin fondo.ico">
+    <title>Carrito de Compras</title>
+</head>
+<body>
+    <header class="header">
+        <script src="https://kit.fontawesome.com/682853796b.js" crossorigin="anonymous"></script>
+            <div class="contenedortodo">
+                    <div class="container-hero">
+                        <div class="container hero">
+                            <div class="customer-support">
+                                <i class="fa-solid fa-headset"></i>
+                                <div class="content-customer-support">
+                                    <span class="text">Soporte al cliente</span>
+                                    <span class="number">+504 9615-0439</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    <div class="container-logo">
+                        <img src="imagenes/logo sin fondo.ico" alt="">
+                        </div>
+            
+            
+                <div class="container-user-cart">
+                    <div class="container-user">
+                        <i class="fa-solid fa-user"></i>
+                        <i class="fa-solid fa-basket-shopping"></i>
+                        <div class="shopping-cart">
+                            <span class="text">Carrito</span>
+                            <div class="cart-icon">
+                                <span class="cart-count">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                    
+            
+                <h1>CARRITO</h1>
+            
+                    <div class="container-navbar">
+                        <nav class="navbar container">
+                            <i class="fa-solid fa-bars"></i>
+                            <ul class="menu">
+                            <li><a href="#">INICIO</a></li>
+                            <li><a href="#">PRODUCTOS</a></li>
+                            <li><a href="#">¿QUIENES SOMOS?</a></li>
+                            <li><a href="#">COLECCIONES</a></li>
+                            <li><a href="#">SERVICIO AL CLIENTE</a></li>
+                            <li><a href="#">BLOG</a></li>
+                            </ul>
+            
+                            <form class="search-form">
+                                <input type="search" placeholder="Buscar...">
+                                <button class="btn-search">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </form>
+            
+                        </nav>
+                    </div>
+                    
+                
+        </div>
+    </header>
+   
+    <main class="main">
+        <section class="products">
+            <div class="product">
+                <img src="imagenes/sombreroguacamaya2.png" alt="">
+                <h2>Sombrero con guacamaya</h2>
+                <p>Sombrero con liston negro con una guacamaya en tonos rojos</p>
+                <p>Lps.249.99</p>
+                <button class="add-to-cart" data-product-id="1" data-product-price="249.99">Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="imagenes/sombrerogirasoles2.png" alt="">
+                <h2>Sombrero con girasol</h2>
+                <p>Sombrero con liston negro con un girasol</p>
+                <p>Lps.380.99</p>
+                <button class="add-to-cart" data-product-id="2" data-product-price="380.99">Añadir al carrito</button>
+            </div>
+        </section>
+        <section class="cart">
+            <h2>Carrito de Compras</h2>
+            <ul class="cart-items"></ul>
+            <p class="total">Total: $<span class="total-amount">0.00</span></p>
+            <button class="empty-cart">Vaciar Carrito</button>
+        </section>
+    </main>
+    <script src="carrito.js"></script>
+</body>
+</html>
